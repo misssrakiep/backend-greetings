@@ -1,0 +1,33 @@
+{
+  "name": "greet-web-app",
+  "version": "1.0.0",
+  "description": "backend greeting app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "Shameera Rakiep",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.4",
+    "l": "^0.6.0",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.5",
+    "node-static": "^0.7.9"
+  },
+  "devDependencies": {
+    "mustache": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misssrakiep/backend_greetingWebApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/misssrakiep/backend_greetingWebApp/issues"
+  },
+  "homepage": "https://github.com/misssrakiep/backend_greetingWebApp#readme"
+}

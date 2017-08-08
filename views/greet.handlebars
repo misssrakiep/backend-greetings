@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Lobster|Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="greetApp.css">
+<center>
+	<div class="row-1">
+		<div class="col-12">
+			<img src="https://www.archhealing.com/images/flower_icon_orange.png" height="50px" width="50px" alt="">
+			<img src="https://www.archhealing.com/images/flower_icon_orange.png" height="50px" width="50px" alt="">
+			<img src="https://www.archhealing.com/images/flower_icon_orange.png" height="50px" width="50px" alt="">
+{{#if name}}
+<h1>{{language}}, {{name}}!</h1>
+{{else}}
+<h1>Welcome!</h1>
+{{/if}}
+{{#if count}}
+<h2>{{count}} person(s) has been greeted</h2>
+{{else}}
+<h2>Why don't you try customising the greeting?</h2>
+{{/if}}
+	</div>
+</div>
+</center>
+
+<br>
+<br>
+<div class="row-2">
+	<center>
+	<div class="col-12">
+			<form class="greetForm" action="/greetedNames" method="post">
+				<input type="text" class="nameField" name="userName" placeholder="Type your name in here" required>
+				<br>
+				<input type="radio" name="language" value="Hello">English
+				<input type="radio" name="language" value="Haai daar">Afrikaans
+				<input type="radio" name="language" value="Molo">isiXhosa
+				<br>
+				<input type="submit" class="submitBtn" name="submit" value="Greet Me" method="post"/>
+				<br>
+			</form>
+
+	</div>
+</center>
+</div>
+
+<center>
+<div class="col-12">
+	<div class="link"><a href="/greetedNames">View previously greeted names</a></div>
+	<div class="link"><a href="/counter">How many names have been greeted?</a></div>
+</div>
+</center>
+
+<center>
+<div class="footer">
+	<h3>Shameera Rakiep</h3>
+	<a href="https://github.com/misssrakiep"><img src="http://vijithasridhar.github.io/img/github-black.png" height="30px" width="30px" alt="Shameera Rakiep GitHub"></a>
+</div>
+</center>
