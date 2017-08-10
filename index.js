@@ -8,7 +8,7 @@ const session = require('express-session');
 const GreetRoutes = require('./greetedNames');
 const Models = require('./models');
 
-const models = Models(process.env.MONGO_DB_URL ||'mongodb://localhost/greetings');
+const models = Models(process.env.MONGO_DB_URL ||'mongodb://localhost:27017/greetings');
 const mongoose = require('mongoose');
 
 const greetRoutes = GreetRoutes(models);
