@@ -46,7 +46,8 @@ app.post('/greetedNames', greetRoutes.addName);
 
 // app.get('counter')
 
-const port = process.env.MONGO_DB_URL || 3005;
+const port = 3005;
+app.set('port',process.env.PORT || port);
 
 //initialise port number for app to run on
 app.listen(port, function(){
