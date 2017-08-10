@@ -77,6 +77,7 @@ a{
 .row-1{
   margin-bottom: 5px;
 }
+
 .row::after {
     content: "";
     clear: both;
@@ -92,7 +93,6 @@ li{
   background-color: navy;
   color: white;
   width: 47%;
-  display: inline-block;
   border: 2px solid navy;
   text-decoration: none;
   list-style: none;
@@ -129,4 +129,7 @@ h3{
 .prev{
   margin-top:-20px;
   color: orange;
+}
+.space{
+  height: 25%;
 }

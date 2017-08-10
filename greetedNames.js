@@ -2,13 +2,13 @@ module.exports = function(models) {
 
   const userData = [];
   const namesObj = {};
-  var counter = 0;
 
   const index = function(req, res, next) {
     var name = req.body.userName;
     var language = req.body.language;
     var newName = {
-      name: name
+      name: name,
+      count: 1
     };
 
     res.render('greet', {});
@@ -22,7 +22,8 @@ module.exports = function(models) {
       }
       else{
         res.render('greeted',{
-          name: name
+          name: name,
+          count: 1
         })
       }
     });
@@ -31,13 +32,13 @@ module.exports = function(models) {
   const addName = function(req, res, next) {
     var name = req.body.userName;
     var language = req.body.language;
-    // var newName = {
-    //   name: name
-    // };
+    var newName = {
+      name: name
+    };
 
 
-    models.Name.find({
-      // name: req.body.userName
+    models.Name.findOne({
+      name: req.body.userName
     }, function(err, naam) {
       console.log('Find One');
       console.log(naam);
@@ -64,18 +65,20 @@ module.exports = function(models) {
             if (err) {
               return done(err);
             }
-            res.render('greet', {namesObj: naam
-              // name: name,
-              // language: language
+            res.render('greet', {
+              name: name,
+              language: language
             })
           })
         });
     }
 
 
+
       if (naam) {
         console.log('Reached the render');
-        res.render('greet', { name: naam
+        res.render('greet', {
+          namesObj: name
           // name: name,
           // language: language
         });

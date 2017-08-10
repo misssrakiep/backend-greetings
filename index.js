@@ -47,7 +47,7 @@ app.post('/greetedNames', greetRoutes.addName);
 
 // app.get('counter')
 
-const port = 3005;
+const port = process.env.PORT || 3005;
 //initialise port number for app to run on
 app.listen(port, function(){
 	console.log('App started on port: ' + port);
