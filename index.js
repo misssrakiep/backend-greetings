@@ -32,11 +32,11 @@ app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 * 30 }, resave
 }));
 
 ////use flash to display flash messages
-// app.use(flash());
-app.get('/home', function(req, res){
-	res.send('Welcome!');
-	// res.redirect('/greetedNames')
-});
+app.use(flash());
+// app.get('/home', function(req, res){
+// 	res.send('Welcome!');
+// 	// res.redirect('/greetedNames')
+// });
 
 app.get('/', greetRoutes.index);
 app.get('/greetedNames', greetRoutes.addNameScreen);
