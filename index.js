@@ -48,9 +48,6 @@ app.post('/greetedNames', greetRoutes.addName);
 
 const port = 3005;
 app.set('port',process.env.PORT || port);
-app.listen(port, function() {
-    console.log("App is running on port " + port);
-});
 //initialise port number for app to run on
 app.listen(port, function(){
 	console.log('App started on port: ' + port);
