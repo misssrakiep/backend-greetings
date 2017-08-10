@@ -29,6 +29,12 @@ a{
   border: 2px solid navy;
   font-family: 'Comfortaa', cursive;
   color: navy;
+  height: 27px;
+  width: 20%;
+  font-size: 20px;
+}
+.lang{
+  font-size: 20px;
 }
 .submitBtn:hover{
   border: 2px solid red;
@@ -40,14 +46,14 @@ a{
   font-size: 30px;
   text-align: center;
 }
-.link:hover{
+.link:hover,{
   background-color: red;
 }
 .link{
   font-family: 'Comfortaa', cursive;
   background-color: orange;
   border: 3px solid white;
-  width: 45%;
+  width: 70%;
   height: 30px;
   font-size: 22px;
   display: inline-block;
@@ -93,6 +99,8 @@ li{
   font-size: 20px;
 }
 .footer {
+  margin-top: -5px;
+    height: 15%;
     width: 100%;
     clear: both;
     position: fixed;
@@ -102,5 +110,23 @@ li{
     font-family: 'Pacifico', cursive;
 }
 h3{
+  margin-top: -5px;
   margin-bottom: 2px;
+  color: white;
+  font-size: 30px;
+}
+.home{
+  font-family: 'Comfortaa', cursive;
+  background-color: orange;
+  border: 3px solid white;
+  width: 70%;
+  height: 30px;
+  font-size: 22px;
+}
+.home:hover{
+  background-color: red;
+}
+.prev{
+  margin-top:-20px;
+  color: orange;
 }

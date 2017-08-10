@@ -2,13 +2,11 @@
 <div class="row-1">
   <center>
   <div class="col-12">
-    <h1>Previously greeted names:</h1>
+    <h1 class="prev">Previously greeted names:</h1>
   </div>
   <div class="col-12">
     <img src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/home-128.png" width="30px" height="30px" alt="Home">
-    <div class="link">
-      <a href="/">Return to greeting page</a>
-    </div>
+      <a class="home" href="/">Return to greeting page</a>
   </div>
 </center>
 
@@ -17,7 +15,7 @@
 <center>
   <div class="col-12">
    <ul>
-    {{#each userData}}
+    {{#each name}}
     <li>{{this.name}}</li>
     {{/each}}
   </ul>

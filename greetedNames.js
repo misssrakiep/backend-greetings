@@ -31,13 +31,13 @@ module.exports = function(models) {
   const addName = function(req, res, next) {
     var name = req.body.userName;
     var language = req.body.language;
-    var newName = {
-      name: name
-    };
+    // var newName = {
+    //   name: name
+    // };
 
 
-    models.Name.findOne({
-      name: req.body.userName
+    models.Name.find({
+      // name: req.body.userName
     }, function(err, naam) {
       console.log('Find One');
       console.log(naam);
@@ -47,36 +47,37 @@ module.exports = function(models) {
       };
 
       if (naam === null) {
-        console.log("what")
+        console.log("Searched for this name")
         models.Name.create({
           name: req.body.userName,
           counter: 1
         }, function(err, result) {
-          console.log('Create');
+          console.log('Created this name');
           console.log(arguments);
           if (err) {
             return done(err);
           }
-          models.Name.findOne({
-            name: req.body.userName
+          models.Name.find({
+            name: req.body.userData
           }, function(err) {
             console.log('Second find one');
             if (err) {
               return done(err);
             }
-            res.render('greet', {
-              name: name,
-              language: language
+            res.render('greet', {namesObj: naam
+              // name: name,
+              // language: language
             })
           })
         });
-      }
+    }
+
 
       if (naam) {
-        console.log('Lol');
-        res.render('greet', {
-          name: name,
-          language: language
+        console.log('Reached the render');
+        res.render('greet', { name: naam
+          // name: name,
+          // language: language
         });
       }
 

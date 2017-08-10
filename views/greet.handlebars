@@ -31,13 +31,13 @@
 	<div class="col-12">
 			<form class="greetForm" action="/greetedNames" method="post">
 				<input type="text" class="nameField" name="userName" placeholder="Type your name in here" required>
-				<br>
-				<input type="radio" name="language" value="Hello" required>English
-				<input type="radio" name="language" value="Haai daar" required>Afrikaans
-				<input type="radio" name="language" value="Molo" required>isiXhosa
+				<br><div class="lang">
+				<input class="lang" type="radio" name="language" value="Hello" required>English
+				<input class="lang" type="radio" name="language" value="Haai daar" required>Afrikaans
+				<input class="lang" type="radio" name="language" value="Molo" required>isiXhosa
 				<br>
 				<input type="submit" class="submitBtn" name="submit" value="Greet Me" method="post"/>
-				<br>
+			</div><br>
 			</form>
 
 	</div>
@@ -46,7 +46,7 @@
 
 <center>
 <div class="col-12">
-	<div class="link"><a href="/greetedNames">View previously greeted names</a></div>
+	<div class="link"><a href="/greetedNames">View previously greeted names</a></div><br>
 	<div class="link"><a href="/counter">How many names have been greeted?</a></div>
 </div>
 </center>
