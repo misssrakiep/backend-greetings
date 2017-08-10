@@ -1,4 +1,4 @@
-var http = require('http'); 
+var http = require('http');
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
@@ -48,8 +48,9 @@ app.post('/greetedNames', greetRoutes.addName);
 // app.get('counter')
 
 const port = 3005;
-app.set('port',process.env.PORT || port);
 //initialise port number for app to run on
 app.listen(port, function(){
 	console.log('App started on port: ' + port);
 });
+
+app.set('port',process.env.PORT || port);

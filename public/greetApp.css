@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Lobster|Pacifico');
 * {
     box-sizing: border-box;
+  }
+img, .welcome{
+  margin-top: -3px;
+  display: inline-block;
+}
+.heading{
+  background-color: orange;
 }
 h1{
-  font-family: 'Pacifico', cursive;
-  color: orange;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 60px;
+  margin-bottom: -10px;
 }
 h2{
   font-family: 'Comfortaa', cursive;
   color: navy;
+  font-size: 40px;
 }
 a{
   color: inherit;
@@ -26,6 +36,9 @@ a{
 }
 .nameField{
   border: 2px solid navy;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 .link:hover{
   background-color: red;
@@ -34,7 +47,10 @@ a{
   font-family: 'Comfortaa', cursive;
   background-color: orange;
   border: 3px solid white;
-  width: 100%;
+  width: 45%;
+  height: 30px;
+  font-size: 22px;
+  display: inline-block;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -47,12 +63,10 @@ a{
 .col-9 {width: 75%;}
 .col-10 {
   width: 83.33%;
-  border: 2px solid orange;
 }
 .col-11 {width: 91.66%;}
 .col-12 {
   width: 100%;
-  border: 2px solid orange;
 }
 .row-1{
   margin-bottom: 5px;
