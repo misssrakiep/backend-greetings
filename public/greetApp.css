@@ -25,11 +25,16 @@ a{
   text-decoration: none;
 }
 .submitBtn{
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  align-items: center;
   background: none;
   border: 2px solid navy;
   font-family: 'Comfortaa', cursive;
   color: navy;
-  height: 27px;
+  height: 40px;
   width: 20%;
   font-size: 20px;
 }
@@ -41,6 +46,7 @@ a{
   color: red;
 }
 .nameField{
+  padding: 5px;
   border: 2px solid navy;
   height: 30px;
   font-size: 30px;
@@ -50,11 +56,12 @@ a{
   background-color: red;
 }
 .link{
+  padding: 5px;
   font-family: 'Comfortaa', cursive;
   background-color: orange;
   border: 3px solid white;
   width: 70%;
-  height: 30px;
+  height: 40px;
   font-size: 22px;
   display: inline-block;
 }
@@ -132,4 +139,12 @@ h3{
 }
 .space{
   height: 25%;
+}
+
+
+.count{
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-family: 'Comfortaa', cursive;
+  color: red;
 }

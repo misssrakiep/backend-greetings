@@ -43,9 +43,10 @@ app.get('/', greetRoutes.index);
 app.get('/greetedNames', greetRoutes.addNameScreen);
 app.post('/greetedNames', greetRoutes.addName);
 
+
 // app.post('/greetedNames', greetRoutes.addName);
 
-// app.get('counter')
+// app.get('count')
 
 const port = process.env.PORT || 3005;
 //initialise port number for app to run on
